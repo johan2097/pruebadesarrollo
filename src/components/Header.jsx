@@ -4,13 +4,18 @@ import { Link, useLocation } from 'react-router-dom'
 import logo from '../assets/images/Logo-2.png'
 
 const mainNav = [
-    
     {
-        display: "Catalogo",
+        display: "Inicio"
+    },
+    {
+        display: "Servicios",
         path: "/catalog"
     },
     {
-        display: "Quienos somos"
+        display: "Nuestros Equipos"
+    },
+    {
+        display: "Portafolio"
     },
     {
         display: "Contacto"
@@ -43,11 +48,12 @@ const Header = () => {
 
     return (
         <div className="header" ref={headerRef}>
-            <div className="container">
-                <div className="header__logo">
+            <div className="header__logo">
                         <img src={logo} alt="" />
                     
                 </div>
+            <div className="container">
+                
                 <div className="header__menu">
                     <div className="header__menu__mobile-toggle" onClick={menuToggle}>
                         <i className='bx bx-menu-alt-left'></i>

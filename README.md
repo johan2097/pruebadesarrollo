@@ -12,6 +12,6 @@ Google Font
 
 # Description
 
-    Explica elementos de ecommerce en la web.
+Explica elementos de ecommerce en la web.
 
 

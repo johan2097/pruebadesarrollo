@@ -39,11 +39,11 @@ const Login = ({ handleChange }) => {
                     {(props) => (
                         <Form>
                             <Field as={TextField} label='Usuario' name="username"
-                                placeholder='Enter username' fullWidth required
+                                placeholder='Ingrese el usuario' fullWidth required
                                 helperText={<ErrorMessage name="username" />}
                             />
                             <Field as={TextField} label='Contraseña' name="password"
-                                placeholder='Enter password' type='password' fullWidth required
+                                placeholder='Ingrese la contraseña' type='password' fullWidth required
                                 helperText={<ErrorMessage name="password" />} />
                             <Field as={FormControlLabel}
                                 name='remember'
@@ -62,12 +62,12 @@ const Login = ({ handleChange }) => {
                 </Formik>
                 <Typography >
                     <Link href="#" >
-                        Forgot password ?
+                        Recordar la contraseña ?
                 </Link>
                 </Typography>
-                <Typography > Do you have an account ?
+                <Typography > Tu tienes una cuenta ?
                      <Link href="#" onClick={() => handleChange("event", 1)} >
-                        Sign Up
+                        Registrarse
                 </Link>
                 </Typography>
             </Paper>

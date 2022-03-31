@@ -38,9 +38,9 @@ const Login = ({ handleChange }) => {
                 <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema}>
                     {(props) => (
                         <Form>
-                            <Field as={TextField} label='Usuario' name="username"
-                                placeholder='Ingrese el usuario' fullWidth required
-                                helperText={<ErrorMessage name="username" />}
+                            <Field as={TextField} label='Email' name="email"
+                                placeholder='Ingrese el email' fullWidth required
+                                helperText={<ErrorMessage name="email" />}
                             />
                             <Field as={TextField} label='Contraseña' name="password"
                                 placeholder='Ingrese la contraseña' type='password' fullWidth required
@@ -52,10 +52,10 @@ const Login = ({ handleChange }) => {
                                         color="primary"
                                     />
                                 }
-                                label="Remember me"
+                                label="Suscribirse al newsletter"
                             />
                             <Button type='submit' color='primary' variant="contained" disabled={props.isSubmitting}
-                                style={btnstyle} fullWidth>{props.isSubmitting ? "Loading" : "Sign in"}</Button>
+                                style={btnstyle} fullWidth>{props.isSubmitting ? "Loading" : "Login"}</Button>
 
                         </Form>
                     )}
